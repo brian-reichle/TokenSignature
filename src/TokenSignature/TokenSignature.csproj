@@ -12,6 +12,7 @@
       version=$(Version);
       authors=$(Authors);
       copyright=$(Copyright);
+      commitid=$(CommitID);
     </NuspecProperties>
   </PropertyGroup>
 </Project>

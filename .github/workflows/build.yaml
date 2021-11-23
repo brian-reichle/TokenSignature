@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build TokenSignature
-        run: dotnet build src
+        run: dotnet build src /p:CommitID=${{ github.sha }}
       - name: Save Artifacts
         uses: actions/upload-artifact@v2
         with:
