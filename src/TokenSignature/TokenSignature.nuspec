@@ -1,0 +1,16 @@
+<package>
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <description>$description$</description>
+    <authors>$authors$</authors>
+    <owners>$authors$</owners>
+    <copyright>$copyright$</copyright>
+    <developmentDependency>true</developmentDependency>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="TokenSignature.snk" target="keys\" />
+    <file src="TokenSignature.props" target="build\" />
+  </files>
+</package>

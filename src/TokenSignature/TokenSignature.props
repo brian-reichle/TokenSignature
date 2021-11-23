@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)..\keys\TokenSignature.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+
+    <TokenSignaturePublicKey>002400000480000094000000060200000024000052534131000400000100010021dc2854f164b1a5d7ed32e5c1161b7eed33e3856fc957da995c26c8c5162b83f36a6733b6a3bbbed9775dbeee1f4deefee7bbc5e814fe48244a70a0395dc7bc6c1f9f10dd42ac2a03aef7a5c29b29ce14d1bcb35a723c113e771710619ef144e3ce11596bc3538dfc15c772d335ed3d775c1209ab46dd8b489e01ccbe070cce</TokenSignaturePublicKey>
+    <TokenSignaturePublicKeyToken>92af6ebfb1555cd3</TokenSignaturePublicKeyToken>
+  </PropertyGroup>
+</Project>

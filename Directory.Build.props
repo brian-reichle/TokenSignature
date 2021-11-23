@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <OutputPath>$(MSBuildThisFileDirectory)bin\</OutputPath>
+    <BaseIntermediateOutputPath>$(MsBuildThisFileDirectory)obj\</BaseIntermediateOutputPath>
+
+    <Version>1.0.0</Version>
+    <Authors>Brian Reichle</Authors>
+    <Copyright>Brian Reichle</Copyright>
+
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+</Project>

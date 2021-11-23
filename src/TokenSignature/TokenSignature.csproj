@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.Build.NoTargets">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>TokenSignature</PackageId>
+    <Description>A package that simply configures a strong name signature using the package provided key.</Description>
+
+    <NuspecFile>$(MSBuildThisFileDirectory)TokenSignature.nuspec</NuspecFile>
+    <NuspecProperties>
+      id=$(PackageId);
+      description=$(Description);
+      version=$(Version);
+      authors=$(Authors);
+      copyright=$(Copyright);
+    </NuspecProperties>
+  </PropertyGroup>
+</Project>
