@@ -1,0 +1,27 @@
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    types: [ opened, synchronize ]
+
+env:
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+jobs:
+  build:
+    name: Build
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build TokenSignature
+        run: dotnet build src
+      - name: Save Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: package
+          path: bin\*.nupkg
+          if-no-files-found: error
